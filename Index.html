@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Nilam Nurmah Daniyah</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #dbeafe, #93c5fd, #60a5fa);
+            color: #1e3a8a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 650px;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(30, 64, 175, 0.25);
+            animation: muncul 1s ease;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1d4ed8, #60a5fa);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 15px;
+            border: 4px solid white;
+            border-radius: 50%;
+            background: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: #1d4ed8;
+        }
+
+        .header h1 {
+            font-size: 27px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1d4ed8;
+        }
+
+        .biodata-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 16px;
+            margin-bottom: 13px;
+            background: #eff6ff;
+            border-radius: 12px;
+            border-left: 5px solid #3b82f6;
+            transition: 0.3s;
+        }
+
+        .biodata-item:hover {
+            background: #dbeafe;
+            transform: translateX(5px);
+        }
+
+        .icon {
+            font-size: 24px;
+            min-width: 30px;
+        }
+
+        .label {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+
+        .value {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e40af;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            text-align: center;
+            background: #eff6ff;
+            padding: 20px;
+            color: #3b82f6;
+            font-size: 13px;
+        }
+
+        .footer span {
+            color: #2563eb;
+        }
+
+        @keyframes muncul {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 22px;
+            }
+
+            .content {
+                padding: 22px 18px;
+            }
+
+            .value {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="avatar">👩🏻‍🎓</div>
+            <h1>Nilam Nurmah Daniyah</h1>
+            <p>Pelajar | SMK Banjar Asri</p>
+        </header>
+
+        <main class="content">
+            <h2>💙 Biodata Diri</h2>
+
+            <div class="biodata-item">
+                <div class="icon">👤</div>
+                <div>
+                    <div class="label">Nama Lengkap</div>
+                    <div class="value">Nilam Nurmah Daniyah</div>
+                </div>
+            </div>
+
+            <div class="biodata-item">
+                <div class="icon">🏫</div>
+                <div>
+                    <div class="label">Sekolah</div>
+                    <div class="value">SMK Banjar Asri</div>
+                </div>
+            </div>
+
+            <div class="biodata-item">
+                <div class="icon">📚</div>
+                <div>
+                    <div class="label">Kelas</div>
+                    <div class="value">X TJKT 1</div>
+                </div>
+            </div>
+
+            <div class="biodata-item">
+                <div class="icon">📍</div>
+                <div>
+                    <div class="label">Alamat</div>
+                    <div class="value">
+                        Kp. Petak RT 01 RW 13,<br>
+                        Desa Pasirmulya,<br>
+                        Kecamatan Banjaran,<br>
+                        Kabupaten Bandung
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>💙 <span>Terima kasih telah mengunjungi</span> 💙</p>
+            <p style="margin-top: 8px;">
+                Website Biodata &copy; 2026
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
